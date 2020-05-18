@@ -3,7 +3,7 @@ version: '3.3'
 services:
   mysql:
     container_name: kudl-db
-    image: kudl1229/kudl-db:0.0.1
+    image: kudl1229/kudl-db:0.0.2
     restart: always
     ports:
       - 3306:3306

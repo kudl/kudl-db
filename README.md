@@ -23,5 +23,5 @@ docker-compose up
 
 ### Stop Local Mysql
 ```shell script
-docker-compose up
+docker-compose down
 ```

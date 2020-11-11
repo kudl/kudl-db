@@ -8,3 +8,14 @@ CREATE TABLE `product` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
+create table product_item
+(
+	id bigint auto_increment
+		primary key,
+	product_id bigint not null,
+	name varchar(255) not null,
+	updated_at datetime not null,
+	created_at datetime not null,
+	constraint product_item_fk_01
+		foreign key (product_id) references product (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

@@ -5,3 +5,5 @@ insert into product_item (product_id, name, updated_at, created_at) value (1, 'p
 insert into product_item (product_id, name, updated_at, created_at) value (1, 'productItemName2', now(), now());
 insert into product_item (product_id, name, updated_at, created_at) value (2, 'productItemName3', now(), now());
 insert into product_item (product_id, name, updated_at, created_at) value (2, 'productItemName4', now(), now());
+
+insert into country (name, hide) values ('Namibia', false), ('Laos', false), ('Macau', true), ('Belarus', false);
